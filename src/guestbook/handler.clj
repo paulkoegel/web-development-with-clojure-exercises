@@ -5,7 +5,8 @@
             [hiccup.middleware :refer [wrap-base-url]]
             [compojure.handler :as handler]
             [compojure.route :as route]
-            [guestbook.routes.home :refer [home-routes]]))
+            [guestbook.routes.home :refer [home-routes]]
+            [guestbook.models.db :as db]))
 
 (defn init []
   (println "guestbook is starting")
